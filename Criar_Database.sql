@@ -77,8 +77,6 @@ CREATE TABLE IF NOT EXISTS `mydb`.`COMENTARIO` (
   PRIMARY KEY (`id_comentario`),
   FOREIGN KEY (`MENSAGEM_id_mensagem`)
     REFERENCES `mydb`.`MENSAGEM` (`id_mensagem`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
   FOREIGN KEY (`USUARIO_id_usuario`)
     REFERENCES `mydb`.`USUARIO` (`id_usuario`)
   FOREIGN KEY (`COMENTARIO_id_comentario`)
